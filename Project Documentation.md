@@ -71,7 +71,43 @@ Maximizing long-term adoption requires continuous refinement based on end-user e
 *   **Monthly Review Board:** A joint meeting between Sales Leaders, Marketing Teams, and the Salesforce Admin to refine AI Lead Scoring criteria and update Agentforce conversation guardrails.
 
 ---
-
 ## 5. Testing & Quality Assurance (UAT)
 
-*We will fill this section out in Step 3 by structuring your test cases and connecting your test screenshots!*
+To validate the reliability of the automation rules, data integrity, and lead management configurations, a series of User Acceptance Testing (UAT) cases were executed.
+
+### Test Case 1: Lead Creation & Automated Profile Ingestion
+*   **Objective:** Verify that a new lead can be created successfully in the system with all core parameters mapped.
+*   **Steps executed:** 
+    1. Navigated to the Lead Object.
+    2. Selected "New Lead" and populated contact information, organization details, and source.
+    3. Saved the record.
+*   **Expected Result:** Record is successfully generated in the CRM database without validation errors.
+*   **Status:** Pass ✅
+
+![Test Case 1 - Create Lead](Test%201%20Create%20a%20Lead.jpeg)
+
+---
+
+### Test Case 2: Record Modification & Flow Triggers
+*   **Objective:** Ensure that lead details can be edited dynamically and that updates successfully evaluate background flow criteria.
+*   **Steps executed:** 
+    1. Opened an existing lead record.
+    2. Modified fields to update missing information (simulating an Agentforce data capture event).
+    3. Saved changes to trigger the scoring re-evaluation.
+*   **Expected Result:** System accepts the modifications and updates the lead timeline accurately.
+*   **Status:** Pass ✅
+
+![Test Case 2 - Edit Lead](Test%202%20Edit%20a%20Lead.jpeg)
+
+---
+
+### Test Case 3: Data Lifecycle & Record Deletion
+*   **Objective:** Confirm database maintenance capabilities by verifying that junk, duplicate, or test leads can be completely removed from active views by authorized users.
+*   **Steps executed:**
+    1. Selected a test lead record.
+    2. Executed the Delete command.
+    3. Confirmed removal via system dialog.
+*   **Expected Result:** Record is removed from active lead views and moved to the recycle bin according to standard security protocols.
+*   **Status:** Pass ✅
+
+![Test Case 3 - Delete Lead](Test%203%20Delete%20Lead.jpeg)
