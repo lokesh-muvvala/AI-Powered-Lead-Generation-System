@@ -22,6 +22,13 @@ An advanced Salesforce CRM solution integrated with **Agentforce** and automated
 *   **Data Management:** Data Loader / Import Wizard mapping
 
 ---
+## 🏗️ System Architecture
+
+Below is the system architecture diagram outlining the data flow from lead ingestion through Agentforce processing, Flow automation, and final sales rep notification:
+
+![System Architecture Diagram](architecture-diagram.png)
+
+---
 
 ## Repository Structure
 
