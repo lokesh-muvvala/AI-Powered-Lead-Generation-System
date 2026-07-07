@@ -32,13 +32,14 @@ Below is the system architecture diagram outlining the data flow from lead inges
 
 ## 📂 Project Structure
 
+```text
 ├── force-app/main/default/
 │   ├── bot/                 # Agentforce Agents and Dialog configurations
 │   ├── flows/               # Lead prioritization and alert automation Flows
 │   ├── objects/             # Custom Lead/Opportunity fields and Data Models
 ├── Project Documentation.md # Master document outlining system architecture
 └── User_Adoption_and_Change_Management.md # Strategy and training guidelines
-
+```
 ---
 
 ## Installation & Setup Overview
